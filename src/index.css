@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+  margin-bottom: 20px;
+  color: #333;
+  position: sticky;
+}
+body{
+  background-color: #FFADAD;
+  font-family: 'Fredoka', sans-serif;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.app{
+  width: 75%;
+  margin: 30px auto;
+  position: relative;
+  /* background-color: dimgrey; */
+  
+}
+.content{
+  display: flex;
+}
+.nav{
+  width: 20%;
+  height: 200px;
+  padding: 15px 10px;
+  margin: 0 15px;
+  background-color: #FFD6A5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.eachNav{
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.shadow{
+  box-shadow: 1px 1px 5px #333;
+  border-radius: 10px;
+}
+.menu{
+  width: 75%;
+  padding: 10px;
+  background-color: #9BF6FF;
+}
+.newBlog{
+  width: 75%;
+  padding: 10px;
+  background-color: #9BF6FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  background-color: aqua;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.mar{
+  margin: 20px 0;
+}
+.textInput{
+  width: 80%;
+  padding: 8px 15px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.allBlogContainer{
+
+}
+.eachBlog{
+  /* width: 28%; */
+  display: flex;
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.perSection{
+  height: 100px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+.img{
+  width: 150px;
+  height: 200px;
+}
+.right{
+  padding: 10px 15px;
+}
+.uppernav{
+  background-color: #FFD6A5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  margin: 10px 0;
+  position: sticky;
+  top: 0;
+}
+.upperIcon{
+  margin: 0 20px;
+}
+.postBtnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postBtn{
+  color: #333;
+  background-color: #FFADAD;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  align-self: center;
+}
+.likeBtn{
+  cursor: pointer;
+}
+.likeBtn:hover{
+  color: red;
+}
+.details{
+  
+  background-color: #9BF6FF;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+@media(max-width:580px){
+  .ph{
+    display: none;
+  }
+  .content{
+    justify-content: center;
+  }
+}
+@media(max-width:800px){
+  .app{
+    width: 90%;
+  }
+  .img{
+    width: 100px;
+    height: 150px;
+  }
+  .menu{
+    width: 100%;
+  }
+  .newBlog{
+    width: 100%;
+  }
+  .pc{
+    display: none;
+  }
+  .uppernav{
+    display: flex;
+  }
+  .content{
+    justify-content: center;
+  }
+  
+}
