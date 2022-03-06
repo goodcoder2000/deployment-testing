@@ -7,6 +7,7 @@ import { BrowserRouter as
 import Nav from "./components/Nav";
 import UpperNav from "./components/UpperNav";
 import './index.css';
+import About from "./pages/About";
 import Details from "./pages/Details";
 import Menu from "./pages/Menu";
 import NewBlog from "./pages/NewBlog";
@@ -23,8 +24,9 @@ const App = () =>{
 
                     <Routes>
                                 <Route path="/" element={<Menu/>}/>
-                                <Route path="/new" element={<NewBlog/>}/>
+                                <Route exact path="/new" element={<NewBlog/>}/>
                                 <Route path="/blogs/:title" element={<Details/>}/>
+                                <Route path="/about" element={<About/>}/>
                                 <Route path="*" element={<Nopage/>}/>
                     </Routes>                        
                 </div>

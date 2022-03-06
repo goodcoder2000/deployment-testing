@@ -131,11 +131,16 @@ form{
 .likeBtn:hover{
   color: red;
 }
-.details{
+.details,.about{
   
   background-color: #9BF6FF;
   border-radius: 8px;
   padding: 10px 15px;
+}
+@media(max-width: 1300px){
+  .linkText{
+    display: none;
+  }
 }
 @media(max-width:580px){
   .ph{

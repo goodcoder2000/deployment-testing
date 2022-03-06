@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FcHome, FcAddImage } from "react-icons/fc";
+import { HiOutlineShieldExclamation } from "react-icons/hi";
 
 const UpperNav = () =>{
     return(
@@ -12,6 +13,11 @@ const UpperNav = () =>{
 
             <Link to='/new' className="upperIcon">
                 <FcAddImage size={40}/>
+                <span className="ph">New Blog</span>
+            </Link>
+
+            <Link to='/about' className="upperIcon">
+                <HiOutlineShieldExclamation size={40}/>
                 <span className="ph">New Blog</span>
             </Link>
         </div>
